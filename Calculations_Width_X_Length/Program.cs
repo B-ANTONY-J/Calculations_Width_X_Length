@@ -48,6 +48,7 @@
             Console.WriteLine();
             double inputFlooringPerHour = Convert.ToDouble(Console.ReadLine());
             double flooringPerHourTotal = inputFlooringPerHour* flooringPerHour;
+            //The code below is used to verify the accuracy of the code through out this function
             Console.WriteLine("You have requested " + inputFlooringPerHour + " hours of Labor " + "for a total cost of $ " + flooringPerHourTotal + " dollars");
             Console.WriteLine();
             
