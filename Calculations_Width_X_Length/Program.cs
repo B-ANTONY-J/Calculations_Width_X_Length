@@ -1,7 +1,7 @@
 ﻿namespace Calculations_Width_X_Length
 {
     internal class Program
-    {
+    {       //Const values moved outside of Function to add more stability to the code and to define the values here so they can reused if NEC
            const int sqFootByHours = 20;
            const double flooringPerHour = 86.00;
         static void Main(string[] args)
