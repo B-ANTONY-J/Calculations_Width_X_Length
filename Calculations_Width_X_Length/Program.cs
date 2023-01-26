@@ -13,12 +13,12 @@
             
             Console.WriteLine();
             Console.WriteLine("Please enter a value For both width and length(after each value press enter).");
-            double widthTwo = Convert.ToInt32(Console.ReadLine());
-            double lengthTwo = Convert.ToInt32(Console.ReadLine());
+            double widthCalc = Convert.ToInt32(Console.ReadLine());
+            double lengthCalc = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine();
-            double calculationTwo = widthTwo * lengthTwo;
-            Console.WriteLine("The square footage of your Area is: " + calculationTwo + " sq Feet");
+            double calculationTotal = widthCalc * lengthCalc;
+            Console.WriteLine("The square footage of your Area is: " + calculationTotal + " sq Feet");
 
             Console.WriteLine("Please Enter the Cost per Unit for the Width.");
             double widthCostPerUnit = Convert.ToDouble(Console.ReadLine());
@@ -26,7 +26,7 @@
             Console.WriteLine("Please Enter the Cost per Unit for the Length.");
             double lengthCostPerUnit = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine();
-            double laborCost = (widthTwo * widthCostPerUnit) + (lengthTwo * lengthCostPerUnit);
+            double laborCost = (widthCalc * widthCostPerUnit) + (lengthCalc * lengthCostPerUnit);
             Console.WriteLine("The Total cost for units per square footage is " + "$" + laborCost + " dollars." );
 
             Console.WriteLine("You can divide sq footage by hours here to find out your labor cost. Enter your total sq footage below.");
@@ -35,8 +35,8 @@
             double sqFootageHrResult = (double)sqFootTotal / (double)sqFootByHours;
            // double sqFootageByHours1 = (double)(sqFootageByHours); code removed because line 34 calculated the variable with better accuracy
             double flooringPerHourCalc = flooringPerHour * sqFootageHrResult;
-            double laborCost1 = laborCost;
-            double laborAndAreaCalc = (double)(flooringPerHourCalc) + laborCost1;
+            double laborCostMerge = laborCost;
+            double laborAndAreaCalc = (double)(flooringPerHourCalc) + laborCostMerge;
 
             Console.WriteLine();
             Console.WriteLine("You have a total of " + sqFootTotal + " sq feet" + ", which is estimated to take " + sqFootageHrResult + " hours of time." + " Your total labor cost to complete this build is $" + flooringPerHourCalc + " Dollars.");
