@@ -33,7 +33,7 @@
             int sqFootTotal = Convert.ToInt32(Console.ReadLine());
             int sqFootageByHours = sqFootTotal / sqFootByHours;
             double sqFootageHrResult = (double)sqFootTotal / (double)sqFootByHours;
-           // double sqFootageByHours1 = (double)(sqFootageByHours); code removed because line 34 calculated the variable with better accuracy
+           
             double flooringPerHourCalc = flooringPerHour * sqFootageHrResult;
             double laborCostMerge = laborCost;
             double laborAndAreaCalc = (double)(flooringPerHourCalc) + laborCostMerge;
