@@ -20,14 +20,11 @@
             double calculationTotal = widthCalc * lengthCalc;
             Console.WriteLine("The square footage of your Area is: " + calculationTotal + " sq Feet");
 
-            Console.WriteLine("Please Enter the Cost per Unit for the Width.");
-            double widthCostPerUnit = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine();
-            Console.WriteLine("Please Enter the Cost per Unit for the Length.");
-            double lengthCostPerUnit = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine();
-            double laborCost = (widthCalc * widthCostPerUnit) + (lengthCalc * lengthCostPerUnit);
-            Console.WriteLine("The Total cost for units per square footage is " + "$" + laborCost + " dollars." );
+            Console.WriteLine($"\nPlease Enter the Cost per Unit per Square Feet.\n");
+            double areaCostPerUnit = Convert.ToDouble(Console.ReadLine());
+            
+            double areaCost = (widthCalc * areaCostPerUnit) + (lengthCalc * areaCostPerUnit);
+            Console.WriteLine($"The Total cost for units per square footage is " + "$" + areaCost + " dollars.\n" );
 
             Console.WriteLine("You can divide sq footage by hours here to find out your labor cost. Enter your total sq footage below.");
             int sqFootTotal = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +32,7 @@
             double sqFootageHrResult = (double)sqFootTotal / (double)sqFootByHours;
            
             double flooringPerHourCalc = flooringPerHour * sqFootageHrResult;
-            double laborCostMerge = laborCost;
+            double laborCostMerge = areaCost;
             double laborAndAreaCalc = (double)(flooringPerHourCalc) + laborCostMerge;
 
             Console.WriteLine();
