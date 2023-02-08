@@ -7,9 +7,8 @@
         static void Main(string[] args)
         {
 
-            Console.WriteLine($"\nHello, Florian & Michael!!!");
-
-            Console.WriteLine();
+            Console.WriteLine($"\nHello, Florian & Michael!!!\n");
+                        
             Console.WriteLine("Please enter a value For both width and length(after each value press enter).");
             double widthCalc = Convert.ToInt32(Console.ReadLine());
             double lengthCalc = Convert.ToInt32(Console.ReadLine());
