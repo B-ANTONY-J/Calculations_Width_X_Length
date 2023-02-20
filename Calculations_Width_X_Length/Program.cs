@@ -28,23 +28,16 @@
             double sqFootageHrResult = totalArea / SQ_FOOT_BY_HOUR;
 
             double flooringPerHourCalc = FLOORING_PER_HOUR * sqFootageHrResult;
-            double laborCostMerge = areaCost;
-            double laborAndAreaCalc = (double)(flooringPerHourCalc) + laborCostMerge;
+            
+            double laborAndAreaCalc = (double)(flooringPerHourCalc) + areaCost;
 
             
             Console.WriteLine($"\nYou have a total of " + totalArea + " sq feet" + ", which is estimated to take " + sqFootageHrResult + " hours of time." + " Your total labor cost to complete this build is $" + flooringPerHourCalc + " Dollars.");
             
-            Console.WriteLine($"\nThe combined total for labor cost and unit cost by sq footage is " + "$" + laborAndAreaCalc + " dollars.");
+            Console.WriteLine($"\n\nThe combined total for labor cost and unit cost by sq footage is " + "$" + laborAndAreaCalc + " dollars.");
 
             
-            Console.WriteLine($"\nPlease enter your estinated labor hours below to confirm the calculated flooring work(Cost of Flooring Per Hr is $86.00) is accurate for your request.");
             
-            double inputFlooringPerHour = Convert.ToDouble(Console.ReadLine());
-            double flooringPerHourTotal = inputFlooringPerHour * FLOORING_PER_HOUR;
-            //The code below is used to verify the accuracy of the code through out this function
-            Console.WriteLine($"\nYou have requested " + inputFlooringPerHour + " hours of Labor " + "for a total cost of $ " + flooringPerHourTotal + " dollars\n");
-            
-
 
 
 
